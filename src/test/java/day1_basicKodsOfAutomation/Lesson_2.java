@@ -16,9 +16,11 @@ public class Lesson_2 {
         driver.get("https://www.google.com/");
         Thread.sleep(2000);
 
-        WebElement element=driver.findElement(By.linkText("Google'da arama yapın veya bir URL yazın"));
+        WebElement element=driver.findElement(By.cssSelector(".gLFyf.gsfi"));
         element.click();
         element.sendKeys("my little pony");
+        Thread.sleep(2000);
+        driver.close();
 
 
 
