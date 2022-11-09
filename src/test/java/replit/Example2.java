@@ -1,6 +1,6 @@
 package replit;
 
-public class Methods2 {
+public class Example2 {
     public static void main(String[] args) {
         //buraya dokunma
         method();

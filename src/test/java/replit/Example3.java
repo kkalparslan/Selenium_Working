@@ -1,6 +1,6 @@
 package replit;
 
-public class Methods3 {
+public class Example3 {
     /**
      * hello ve world kelimelerini ayrı ayrı methodlardan çağırarak
      *

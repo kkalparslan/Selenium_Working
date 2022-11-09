@@ -1,6 +1,6 @@
 package replit;
 
-public class Methods1 {
+public class Example1 {
     public static void main(String[] args) {
 
         method("3");
