@@ -1,11 +1,11 @@
-package tasks;
+package tasks.AhmetHoca;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.WebDriverFactory;
 
-public class Task1 {
+public class Task1_Kasım05 {
     /**
      * HW1:
      * 1.	https://www.krafttechexlab.com/Links to an external site. sayfasina git

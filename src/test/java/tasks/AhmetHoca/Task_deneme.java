@@ -1,11 +1,11 @@
-package tasks;
+package tasks.AhmetHoca;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.WebDriverFactory;
 
-public class task_deneme {
+public class Task_deneme {
     /**
      * tiens ana sayfaya git
      * gıda takviyeleri bölümünü seç

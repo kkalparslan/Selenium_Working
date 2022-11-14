@@ -1,0 +1,44 @@
+Access Modifiers
+** variable (public, private, default, protected)
+   method (public, private, default, protected)
+   constructor(public, private, default, protected) .. UNUTMAYIN, CONSTRUCTOR ZATEN ÖZEL BİR METHOD YANİ BUNU BİR ÜST SATIRDA ASLINDA GEÇMİŞ OLDUM.
+   class (default ve public)
+
+ -- private  --> sadece kendi sınıfından erişilebilir
+ -- public --> her yerden erişilebilir
+ -- default --> aynı package içerisinde doğrudan erişilebilir
+ -- protected --> aynı paket içerisinde ve farklı paketlerde dahi olsa parent-child ilişkisi varsa erişilebilir
+
+
+
+ Instance variable --> class içinde method dışında oluşturulur (access modifiers uygulanır)
+ Static variable --> class içinde method dışında oluşturulur (access modifiers uygulanır)
+ Lokal variable --> method içerisinde oluşturulur (access modifiers uygulanmaz) .. ömrü methodla başlar ve methodla biter
+
+
+
+ locator.isSelected(); true or false   ... Assert.assertTrue();
+ locator.isEnabled(); true or false	... Assert.assertTrue();
+ locator.isDisplayed(); true or false	 ... Assert.assertTrue();
+
+
+getAttribute();
+	1. locator.getAttribute("attributeAdı") --> herhangi bir attribute değerini bulma,
+	2. locator.getAttribute("outerHTML") --> ilgili elementin html karşılığını alma.
+
+
+findElements();
+Tek bir locator ile birden çok elementi locate edebilme.
+ArrayList<WebElement> elements = driver.findElements(By...)
+
+Dropdown:
+Özel bir webelement. İletişim kurmak zor. Select() methodu ile manipüle edilir.
+Eğer ilgili dropdown locate edildiğinde 'tag' olarak 'select' ifadesini görüyorsak Select() classını ve onun sahip olduğu methodları kullanacağız.
+WebElement dropDown = driver.findElement(...);
+Select select = new Select(dropDown);
+	select.selectByIndex(INTEGER);
+	select.selectByVisibleText(STRING);
+	List<WebElement> options = select.getOptions(); --> dropdown menüdeki bütün elementler options içerisinde.
+	.
+	.
+	.

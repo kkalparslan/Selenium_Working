@@ -1,0 +1,62 @@
+Java Interview Questions
+
+1.Main Method
+2.Encapsulation
+3.Method Overloading
+
+    public class Maths{
+
+    	public static int toplama(int a, int b){
+    		return a+b;
+    	}
+
+    	public static int toplama(int a, int b){
+    		return a+b+c;
+    	}
+
+    	toplama(5,10); --> 15
+    	toplama(5,10,15); --> 30
+    	toplama(5); --> error
+    }
+
+-------------------------------------------------
+TestNG
+
+TestNG(Test Next Generation) --> Unit Testing Tool, normalde developerlar kullanıyor. Tester olarak bizde farklı amaçlar için (test koşturma, assertion, bir grup testin içerisinde belli bir kısmını beraber çalıştırma-ileride göreceğiz-) kullanıyoruz.
+1.Annotation (NO MORE MAİN METHOD)
+2.Assertion (NO MORE IF ELSE)
+
+
+
+Testing Levels
+1. Unit Test --> Developer
+2. Integration Test --> Developer
+3. System Test --> Tester
+4. User Acceptance Test --> Tester, User, Müşteri
+
+Java: TestNG, JUnit (İleride Cucumber ile beraber kullanacağız)
+C#: Nunit,
+Phyton: PyTest
+
+@Test --> Test metotlarımızı artık main method altında değil, @test altında yazacağız.
+
+@BeforeMethod --> Her testten evvel koşulur.
+@AfterMethod --> Her testten sonra koşulur.
+
+@BeforeClass --> Klas seviyesinde her şeyden evvel bir defa koşulur.
+@AfterClass --> Klas seviyesinde her şeyden sonra bir defa koşulur.
+
+<BeforeClass>
+	<BeforeMethod>@Test1<AfterMethod>
+	<BeforeMethod>@Test2<AfterMethod>
+	<BeforeMethod>@Test3<AfterMethod>
+<AfterClass>
+
+
+Assertions
+
+**Assert.assertEquals(); --> iki tane String değerini karşılaştırıp test sonucunu verir (PASS/(FAIL))
+**Assert.assertTrue(condition); --> ilgili condition'ın(boolean) doğru olup olmadığını kontrol eder
+
+Assert.assertFalse();
+Assert.assertNotEquals();

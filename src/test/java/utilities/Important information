@@ -2,6 +2,6 @@ JAVA VE SELENIUM İÇİN HATIRLATMALAR
 1- Java version kontrolü file- project structure dan yapılıyor.
 2- java da oluşturulan yeni projeyi github a pushlayabilmek için öncelikle VCS enable
 git yapıp sonrasında git-share this project on github yapılmalı.
-3- github taki bir projeyi intelije cekmek için git-clone dedyip origindeki reponun url ini yapıştırmak gerekiyor
-ikinci yol olarak ise maa üstünde bir klasör oluşturup git clone ile yine origindeki reponun url adresi alınıyor
+3- github taki bir projeyi intelije cekmek için git-clone deyip origindeki reponun url ini yapıştırmak gerekiyor
+ikinci yol olarak ise masa üstünde bir klasör oluşturup git clone ile yine origindeki reponun url adresi alınıyor
 ve daha sonra intelijde file-open dan klasör bulunup yol gösteriliyor. 05.11.22
