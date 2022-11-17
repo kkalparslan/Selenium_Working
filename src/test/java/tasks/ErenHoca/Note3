@@ -1,0 +1,75 @@
+ACTIONS
+** Advanced Interactions
+** Actions class kullanılır
+** 'driver', parametre olarak constructur'a sağlanır.
+** Bize çeşitli methodlar sunar; hover over, click, double-click, drag and drop gibi.
+
+1. moveToElement --> ilgili elementin üzerine fareyi götür (görünmez ama arka planda gerçekleşir)
+	    Actions actions = new Actions(driver);
+        WebElement electronicButton = driver.findElement(By.xpath("(//a[.='Electronics'])[2]"));
+        actions.moveToElement(electronicButton).perform();
+
+2. dragAndDrop --> ilgili elementi diğer elementin üzerine bırak
+
+	2.1. draganddrop v1.
+	    WebElement element1 = driver.findElement(By.xpath("//p[.='Drag me to my target']"));
+        WebElement element2 = driver.findElement(By.xpath("//p[text()='Drop here']"));
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(element1,element2).perform();
+
+
+   	2.2. draganddrop v2.
+	    WebElement element1 = driver.findElement(By.xpath("//p[.='Drag me to my target']"));
+        WebElement element2 = driver.findElement(By.xpath("//p[text()='Drop here']"));
+        Actions actions = new Actions(driver);
+        actions.clickAndHold(element1).moveToElement(element2).pause(3000).release().perform();
+
+JS
+More Advanced Interactions
+**JavaScriptExecutor
+ 1. Forced click
+ 2. Scroll up and scroll down(no with selenium) Why? It is related to page action, but not element-focused
+...
+JS-Click
+	    WebElement element = driver.findElement(By.cssSelector("#gh-ug>a"));
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].click();", element);
+
+JS-Scroll Up-Down
+	    JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+        for (int i = 0; i < 10; i++) {
+            Thread.sleep(1000);
+            jse.executeScript("window.scrollBy(0,250)");
+        }
+
+        for (int i = 0; i < 10; i++) {
+            Thread.sleep(1000);
+            jse.executeScript("window.scrollBy(0,-250)");
+        }
+
+FileUpload
+How to upload file manually?
+1. search that choosefile web element and look that if it has type=file
+2. sendkeys button -- path
+MAC
+1.Right click on the file
+2.Hold option key
+3.Select option Copy "file.txt" as Pathname
+
+WINDOWS
+1.Hold Shift button
+2.Right click on file
+3.Copy as Path
+
+Framework'e File diye bir dosya ekledik. Amacımız bu dosyayı bir webpage'e yüklemek.
+ 	    String projectPath = System.getProperty("user.dir");
+        String filePath = "src/test/resources/textfile.txt";
+        String fullPath = projectPath + "/" + filePath;
+
+        WebElement element = driver.findElement(By.cssSelector("#uploadFile"));
+
+        element.sendKeys(fullPath);
+
+Boşlukları doldurabilirsiniz.
+İyi çalışmalar.

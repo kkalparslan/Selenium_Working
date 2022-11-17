@@ -67,7 +67,9 @@ public class Task2_Kasım11 {
         Thread.sleep(1000);
 //        System.out.println("checkedButton.get(1).isSelected() = " + checkedButton.get(1).isSelected());
 //        System.out.println("checkedButton.get(3).isSelected() = " + checkedButton.get(3).isSelected());
-        // check yaptır anlaşılmadı test yarım kaldı.......................................
+        // check yaptır anlaşılmadı test yarım kaldı...
+//        Assert.assertFalse(checkedButton.get(1).isSelected(), "FAIL");
+//        Assert.assertFalse(checkedButton.get(3).isSelected(), "FAIL");
     }
 
     @Test
@@ -88,7 +90,7 @@ public class Task2_Kasım11 {
          * li tag indeki tum elementlerin size ni aldir ve assert yaptir(expectedSize =32 olacak).
          */
         driver.get("https://demoqa.com/links");
-        int expectedSize=32;
+        int expectedSize=33;
         System.out.println("expectedSize = " + expectedSize);
         List<WebElement>elements=driver.findElements(By.tagName("li"));
         System.out.println("elements.size() = " + elements.size());
