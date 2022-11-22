@@ -1,0 +1,46 @@
+KTB2-Day14-Properties & Singleton Design Pattern Class Notes 1
+KTB2-Day14-Properties &
+Singleton Design Pattern Class
+Notes
+Starting Framework
+What is Automation Framework?
+Automation framework —> integrated system
+ —> Organization of;
+ * packages,
+ * files
+ * classes
+ * tools
+ in a way that it makes writing and maintaining automated tests easy.
+Good Framework must be easy to understand, easy to use, easy to scale,
+reusable, easy to maintain and report .
+Properties File
+How to create configuration properties
+1. Right click on the name of the project
+2. New —> File
+3. Enter Name: configuration.properties
+4. OK
+KTB2-Day14-Properties & Singleton Design Pattern Class Notes 2
+properties file works like a control center , we manage our browser, url,
+database and couple of user information from those file and changes
+values.
+It has Key & Value structure
+Create a properties reader file
+1. Right click to utilities package
+2. new —> Class
+3. Enter Name: ConfigurationReader
+4. OK
+KTB2-Day14-Properties & Singleton Design Pattern Class Notes 3
+Singleton Design Pattern
+Singleton design pattern :
+define a class that has only one instance and provides a global point of access
+to it
+Advantage of singleton design pattern :
+Saves memory because object is not created at each request. Only single
+instance is reused again and again
+usage of singleton design pattern :
+It is mostly used in multi-threaded and database application. configuration
+settings etc.
+Singleton design let us use the same version of an object across to whole
+problem
+new WebDriverFactory
+We created Driver class under utilities package
