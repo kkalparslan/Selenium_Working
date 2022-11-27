@@ -2,8 +2,6 @@ package com.tests.tasks.AhmetHoca;
 
 import com.tests.TestBase;
 import com.utilities.ConfigurationReader;
-import com.utilities.Driver;
-import com.utilities.WebDriverFactory;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 
@@ -39,14 +37,14 @@ public class Task3_Kasım20 extends TestBase {
 
 
         driver.get(ConfigurationReader.get("url1"));
-        //driver.manage().window().setPosition(new Point(100,-8));
+        driver.manage().window().setPosition(new Point(3,7));
         //driver.manage().window().setSize(new Dimension(1500,1200));
         WebElement firstName = driver.findElement(By.id("firstName"));
         firstName.sendKeys(ConfigurationReader.get("firstname"));
         WebElement lastName = driver.findElement(By.id("lastName"));
         lastName.sendKeys(ConfigurationReader.get("lastname"));
         WebElement userEmail = driver.findElement(By.id("userEmail"));
-        userEmail.sendKeys(ConfigurationReader.get("username"));
+        userEmail.sendKeys(ConfigurationReader.get("userEmail"));
         driver.findElement(By.xpath("//label[@for='gender-radio-1']")).click();
         driver.findElement(By.cssSelector("#userNumber")).sendKeys("252525404040");
 //        WebElement dateOfBirthInput = driver.findElement(By.id("dateOfBirthInput"));

@@ -21,7 +21,7 @@ public class PropertiesTest {
         WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
         driver.get(ConfigurationReader.get("url"));
         driver.findElement(By.name("email"))
-                .sendKeys(ConfigurationReader.get("username"));
+                .sendKeys(ConfigurationReader.get("userEmail"));
         driver.findElement(By.name("password"))
                 .sendKeys(ConfigurationReader.get("password")
                         + Keys.ENTER);
