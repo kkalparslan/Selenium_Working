@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Krafttech Automation" verbose="1">
+    <test name="Krafttech Smoke Test">
+        <classes>
+            <class name="com.krafttechnologie.tests.day15_POM.NegativeLoginTest">
+                <methods>
+                    <exclude name="wrongUsername"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Krafttech Automation Test">
+        <packages>
+            <package name="com.krafttechnologie.tests.day10_webElement"></package>
+        </packages>
+    </test>
+    <test name="new test">
+        <packages>
+            <package name="com.krafttechnologie.tests.day13_jsexecutor_webTables"></package>
+        </packages>
+    </test>
+
+</suite>

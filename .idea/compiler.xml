@@ -10,5 +10,8 @@
         <module name="Selenium_Working" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Selenium_TestNG_Working" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
