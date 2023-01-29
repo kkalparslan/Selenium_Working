@@ -45,8 +45,8 @@ public class MHRS {
         WebElement login=driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-teal ant-btn-block']"));
         login.click();
         BrowserUtils.waitFor(3);
-//
-//
+
+
         driver.findElement(By.xpath("//button[@class='ant-btn']")).click();
 //        Alert alert=driver.switchTo().alert();
 //        alert.accept();
