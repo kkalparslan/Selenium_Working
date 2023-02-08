@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Alp_Selenium_Working" />
-        <module name="Selenium_Working" />
+        <module name="Selenium_Working_Alp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
